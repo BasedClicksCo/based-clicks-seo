@@ -69,21 +69,21 @@ function Contact() {
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><Phone className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Call</div>
-                  <a href="tel:+18005551234" className="font-serif text-lg text-navy hover:text-gold">+1 (800) 555-1234</a>
+                  <a href="tel:+18189636728" className="font-serif text-lg text-navy hover:text-gold">+1 (818) 963-6728</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><Mail className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                  <a href="mailto:hello@elevareseo.com" className="font-serif text-lg text-navy hover:text-gold">hello@elevareseo.com</a>
+                  <a href="mailto:ElevareSEO@gmail.com" className="font-serif text-lg text-navy hover:text-gold">ElevareSEO@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><MapPin className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Where</div>
-                  <div className="font-serif text-lg text-navy">New York · Remote worldwide</div>
+                  <div className="font-serif text-lg text-navy">California · Remote worldwide</div>
                 </div>
               </li>
             </ul>

@@ -232,8 +232,8 @@ function Home() {
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
                   Get my free audit <ArrowRight className="h-4 w-4" />
                 </Link>
-                <a href="tel:+18005551234" className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold">
-                  <CheckCircle2 className="h-4 w-4" /> Or call +1 (800) 555-1234
+                <a href="tel:+18189636728" className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold">
+                  <CheckCircle2 className="h-4 w-4" /> Or call +1 (818) 963-6728
                 </a>
               </div>
             </div>
