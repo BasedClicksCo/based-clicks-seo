@@ -1,0 +1,90 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Award, Users, Sparkles, HeartHandshake, ArrowRight } from "lucide-react";
+import { Reveal, Eyebrow } from "@/components/site/Section";
+import aboutImg from "@/assets/about.jpg";
+
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      { title: "About Elevare SEO — Our Story & Approach" },
+      { name: "description", content: "Elevare SEO is a premium search agency built on expertise, transparency, and a client-first approach." },
+      { property: "og:title", content: "About Elevare SEO — Our Story & Approach" },
+      { property: "og:description", content: "A premium search agency built on expertise and a client-first approach." },
+      { property: "og:url", content: "/about" },
+    ],
+    links: [{ rel: "canonical", href: "/about" }],
+  }),
+  component: About,
+});
+
+const values = [
+  { icon: Award, title: "Expertise", text: "A senior-only team with decades of combined experience across industries." },
+  { icon: HeartHandshake, title: "Client-first", text: "We measure our success by yours — never by activity or vanity metrics." },
+  { icon: Sparkles, title: "Premium craft", text: "Strategy and execution at a standard our clients are proud to associate with." },
+  { icon: Users, title: "True partnership", text: "We embed with your team, share context openly, and move at your pace." },
+];
+
+function About() {
+  return (
+    <div>
+      <section className="gradient-navy py-24 text-navy-foreground md:py-32">
+        <div className="container-px mx-auto max-w-7xl">
+          <Eyebrow>About Elevare</Eyebrow>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">A premium SEO partner — <span className="text-gold">approachable by design</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">We built Elevare to be the agency we always wanted to hire: strategic, transparent, deeply skilled, and genuinely invested in client outcomes.</p>
+        </div>
+      </section>
+
+      <section className="py-24">
+        <div className="container-px mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+              <img src={aboutImg} alt="Elevare team strategy session" width={1200} height={900} loading="lazy" className="w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-navy/30 to-transparent" />
+            </div>
+          </Reveal>
+          <Reveal>
+            <Eyebrow>Our story</Eyebrow>
+            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">SEO done right, for businesses of every size</h2>
+            <div className="mt-6 space-y-4 text-muted-foreground">
+              <p>Elevare was founded by senior practitioners who grew tired of watching great brands receive cookie-cutter SEO. We believed search deserved the same craft as great design and great engineering.</p>
+              <p>Today we work with single-location shops, fast-growing startups, and global enterprises — applying the same rigorous methodology to each. The work is always custom. The standard is always premium.</p>
+              <p>What hasn't changed: every client gets a senior team, transparent reporting, and a partner who genuinely cares about the outcome.</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-secondary/40 py-24">
+        <div className="container-px mx-auto max-w-7xl">
+          <Reveal className="text-center">
+            <Eyebrow>What we stand for</Eyebrow>
+            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Our values</h2>
+          </Reveal>
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {values.map((v, i) => (
+              <Reveal key={v.title} style={{ transitionDelay: `${i * 70}ms` }}>
+                <div className="h-full rounded-xl border border-border bg-card p-7">
+                  <div className="grid h-12 w-12 place-items-center rounded-lg gradient-navy text-gold">
+                    <v.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-5 font-serif text-xl text-navy">{v.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{v.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container-px mx-auto max-w-4xl text-center">
+          <h2 className="font-serif text-3xl text-navy md:text-4xl">Let's build something measurable together.</h2>
+          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
+            Get in touch <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
