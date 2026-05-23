@@ -111,8 +111,9 @@ function CaseStudies() {
       <section className="bg-secondary/40 py-20">
         <div className="container-px mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-3xl text-navy md:text-4xl">Your story could be next.</h2>
+          <p className="mt-3 text-muted-foreground">See our <Link to="/services" className="text-navy underline hover:text-gold">SEO services</Link> or learn more <Link to="/about" className="text-navy underline hover:text-gold">about BasedClicksCo</Link>.</p>
           <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-            Get a free audit <ArrowRight className="h-4 w-4" />
+            Get a free SEO audit <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
