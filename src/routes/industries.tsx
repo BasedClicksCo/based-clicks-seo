@@ -30,14 +30,14 @@ export const Route = createFileRoute("/industries")({
 });
 
 const items = [
-  { icon: UtensilsCrossed, name: "Restaurants & Hospitality", desc: "Fill seats and drive reservations with local search, reviews, and on-brand content." },
-  { icon: ShoppingBag, name: "eCommerce & Retail", desc: "Category authority, product schema, and faceted-nav strategy that scales catalogs." },
-  { icon: Rocket, name: "Tech Startups & SaaS", desc: "Programmatic SEO, comparison content, and topical authority for growth stages." },
-  { icon: Stethoscope, name: "Healthcare & Wellness", desc: "Compliant, trustworthy content that ranks for high-intent patient queries." },
-  { icon: Scale, name: "Law Firms & Professional Services", desc: "Practice-area pages, local pack dominance, and reputation-led growth." },
-  { icon: HomeIcon, name: "Real Estate", desc: "Neighborhood, listing, and agent-page strategies that capture buyer intent." },
-  { icon: Store, name: "Local Shops & Service Businesses", desc: "Google Business optimization and hyper-local content that fills your calendar." },
-  { icon: Building2, name: "B2B & Enterprise", desc: "Account-aligned content, technical excellence, and complex multi-region SEO." },
+  { icon: UtensilsCrossed, name: "Restaurants", desc: "Local SEO company services that fill seats — search rankings, reviews, and on-brand content that drives reservations." },
+  { icon: ShoppingBag, name: "eCommerce", desc: "Category authority, product schema, and faceted-nav strategy to increase website traffic across large catalogs." },
+  { icon: Rocket, name: "Tech Startups", desc: "Programmatic SEO, comparison content, and topical authority — enterprise SEO solutions tuned for growth-stage teams." },
+  { icon: Stethoscope, name: "Healthcare", desc: "Compliant, trustworthy content marketing and SEO that ranks for high-intent patient queries." },
+  { icon: Scale, name: "Law Firms", desc: "Practice-area pages, local pack dominance, and reputation-led SEO services for professional firms." },
+  { icon: HomeIcon, name: "Real Estate", desc: "Neighborhood, listing, and agent-page strategies engineered by search engine optimization experts." },
+  { icon: Store, name: "Small Local Shops", desc: "SEO services for small businesses — Google Business optimization and hyper-local content that fills your calendar." },
+  { icon: Building2, name: "B2B & Enterprise", desc: "Enterprise SEO solutions with account-aligned content, technical excellence, and multi-region architecture." },
 ];
 
 function Industries() {
@@ -46,8 +46,8 @@ function Industries() {
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Industries we serve</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Tailored for <span className="text-gold">your industry</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">No template playbooks. Every engagement is shaped around your buyers, sales cycle, and competitive landscape.</p>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">SEO Solutions for <span className="text-gold">Every Industry</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Customized SEO services for small businesses, mid-size brands, and enterprise SEO solutions — shaped around your buyers, sales cycle, and competitive landscape.</p>
         </div>
       </section>
 
