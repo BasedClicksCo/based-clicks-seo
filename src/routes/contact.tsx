@@ -66,8 +66,8 @@ function Contact() {
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Contact</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Let's talk about your <span className="text-gold">growth goals</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">Tell us about your business and we'll respond within one business day — usually much faster.</p>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Get Your Free <span className="text-gold">SEO Consultation</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Talk to search engine optimization experts about your goals. We'll deliver a free technical SEO audit and a plan to increase website traffic — usually within one business day.</p>
         </div>
       </section>
 
