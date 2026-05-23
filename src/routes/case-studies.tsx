@@ -6,14 +6,27 @@ import caseImg from "@/assets/case-study.jpg";
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "Case Studies — Elevare SEO" },
-      { name: "description", content: "Real client results: organic traffic growth, ranking improvements, and ROI from Elevare SEO campaigns." },
-      { property: "og:title", content: "Case Studies — Elevare SEO" },
-      { property: "og:description", content: "Real client results from Elevare SEO campaigns." },
-      { property: "og:url", content: "/case-studies" },
+      { title: "SEO Case Studies | BasedClicksCo" },
+      { name: "description", content: "See how BasedClicksCo has increased traffic, rankings, and ROI for businesses across industries with technical SEO audits and content marketing." },
+      { property: "og:title", content: "SEO Case Studies | BasedClicksCo" },
+      { property: "og:description", content: "Proven SEO results — organic traffic growth, ranking improvements, and ROI from BasedClicksCo campaigns." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/case-studies" },
       { property: "og:image", content: "/src/assets/case-study.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/case-studies" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/case-studies" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://elevare-seo.lovable.app/case-studies" },
+          ],
+        }),
+      },
+    ],
   }),
   component: CaseStudies,
 });
