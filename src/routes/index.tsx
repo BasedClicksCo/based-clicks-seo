@@ -166,9 +166,9 @@ function Home() {
           <Reveal className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <Eyebrow>Industries we serve</Eyebrow>
-              <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Any business. Any industry.</h2>
+              <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Boost Your Online Visibility in Any Industry</h2>
               <p className="mt-4 max-w-lg text-muted-foreground">
-                Whether you're a neighborhood restaurant or a global SaaS company, our methodology adapts to your audience, market, and goals.
+                Whether you're a neighborhood restaurant or a global SaaS company, our local SEO company expertise and enterprise SEO solutions adapt to your audience, market, and goals.
               </p>
               <Link to="/industries" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-gold">
                 See industries <ArrowRight className="h-4 w-4" />
