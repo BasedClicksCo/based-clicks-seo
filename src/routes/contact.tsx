@@ -119,7 +119,7 @@ function Contact() {
                 </div>
               ) : (
                 <>
-                  <h2 className="font-serif text-2xl text-navy">Request a free audit</h2>
+                  <h2 className="font-serif text-2xl text-navy">Request your free SEO audit</h2>
                   <div className="mt-6 grid gap-5 md:grid-cols-2">
                     <Field label="Name" name="name" required error={errors.name} />
                     <Field label="Email" name="email" type="email" required error={errors.email} />
