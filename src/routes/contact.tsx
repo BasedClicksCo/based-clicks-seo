@@ -102,8 +102,8 @@ function Contact() {
             </ul>
 
             <div className="mt-10 rounded-xl border border-gold/30 bg-gold/5 p-6">
-              <div className="font-serif text-lg text-navy">Free SEO Audit</div>
-              <p className="mt-1 text-sm text-muted-foreground">Mention "free audit" in your message and we'll include a personalized site review with our reply.</p>
+              <div className="font-serif text-lg text-navy">Free Technical SEO Audit</div>
+              <p className="mt-1 text-sm text-muted-foreground">Mention "free audit" in your message and we'll include a personalized technical SEO audit with our reply.</p>
             </div>
           </Reveal>
 
