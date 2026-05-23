@@ -16,10 +16,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container-px mx-auto flex h-18 max-w-7xl items-center justify-between py-4">
-        <Link to="/" className="group flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center rounded-md gradient-navy text-gold font-serif text-lg shadow-elegant">E</span>
+        <Link to="/" className="group flex items-center gap-2" onClick={() => setOpen(false)} aria-label="BasedClicksCo — SEO services home">
+          <span className="grid h-9 w-9 place-items-center rounded-md gradient-navy text-gold font-serif text-lg shadow-elegant">B</span>
           <span className="font-serif text-xl font-semibold text-navy">
-            Elevare <span className="text-gold">SEO</span>
+            BasedClicks<span className="text-gold">Co</span>
           </span>
         </Link>
 
