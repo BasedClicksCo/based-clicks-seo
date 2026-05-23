@@ -7,13 +7,26 @@ import { Reveal, Eyebrow } from "@/components/site/Section";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Elevare SEO — Get a Free SEO Audit" },
-      { name: "description", content: "Request a free SEO audit or get in touch with the Elevare team. Premium SEO consultation for businesses of every size." },
-      { property: "og:title", content: "Contact Elevare SEO — Get a Free SEO Audit" },
-      { property: "og:description", content: "Request a free SEO audit or get in touch with the Elevare team." },
-      { property: "og:url", content: "/contact" },
+      { title: "Contact BasedClicksCo | SEO Experts" },
+      { name: "description", content: "Request a free SEO audit from BasedClicksCo. Our team helps businesses increase online visibility and traffic with expert SEO services." },
+      { property: "og:title", content: "Contact BasedClicksCo | SEO Experts" },
+      { property: "og:description", content: "Get your free SEO consultation from search engine optimization experts." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://elevare-seo.lovable.app/contact" },
+          ],
+        }),
+      },
+    ],
   }),
   component: Contact,
 });
