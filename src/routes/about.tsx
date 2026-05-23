@@ -42,9 +42,9 @@ function About() {
     <div>
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <Eyebrow>About Elevare</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">A premium SEO partner — <span className="text-gold">approachable by design</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">We built Elevare to be the agency we always wanted to hire: strategic, transparent, deeply skilled, and genuinely invested in client outcomes.</p>
+          <Eyebrow>About BasedClicksCo</Eyebrow>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">About <span className="text-gold">BasedClicksCo</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">We are search engine optimization experts delivering SEO services for small businesses, mid-size companies, and enterprise SEO solutions — transparent, strategic, and genuinely invested in client outcomes.</p>
         </div>
       </section>
 
@@ -52,17 +52,17 @@ function About() {
         <div className="container-px mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <div className="relative overflow-hidden rounded-2xl shadow-elegant">
-              <img src={aboutImg} alt="Elevare team strategy session" width={1200} height={900} loading="lazy" className="w-full object-cover" />
+              <img src={aboutImg} alt="BasedClicksCo SEO experts in a strategy session" width={1200} height={900} loading="lazy" className="w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-navy/30 to-transparent" />
             </div>
           </Reveal>
           <Reveal>
             <Eyebrow>Our story</Eyebrow>
-            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">SEO done right, for businesses of every size</h2>
+            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">SEO experts helping businesses of every size grow online</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
-              <p>Elevare was founded by senior practitioners who grew tired of watching great brands receive cookie-cutter SEO. We believed search deserved the same craft as great design and great engineering.</p>
-              <p>Today we work with single-location shops, fast-growing startups, and global enterprises — applying the same rigorous methodology to each. The work is always custom. The standard is always premium.</p>
-              <p>What hasn't changed: every client gets a senior team, transparent reporting, and a partner who genuinely cares about the outcome.</p>
+              <p>BasedClicksCo was founded by senior practitioners tired of watching great brands receive cookie-cutter SEO. We deliver the same craft as great engineering — applied to search.</p>
+              <p>Today we work with single-location shops, fast-growing startups, and global enterprises. From <Link to="/services" className="text-navy underline hover:text-gold">technical SEO audits</Link> to content marketing and SEO and local SEO company services, every engagement is custom — and the standard is always premium.</p>
+              <p>Every client gets a senior team, transparent reporting, and a partner committed to helping you increase website traffic and revenue. See our <Link to="/case-studies" className="text-navy underline hover:text-gold">case studies</Link> for proof.</p>
             </div>
           </Reveal>
         </div>
