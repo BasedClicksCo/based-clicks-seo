@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://elevare-seo.lovable.app/sitemap.xml
