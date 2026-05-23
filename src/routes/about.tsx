@@ -6,13 +6,26 @@ import aboutImg from "@/assets/about.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Elevare SEO — Our Story & Approach" },
-      { name: "description", content: "Elevare SEO is a premium search agency built on expertise, transparency, and a client-first approach." },
-      { property: "og:title", content: "About Elevare SEO — Our Story & Approach" },
-      { property: "og:description", content: "A premium search agency built on expertise and a client-first approach." },
-      { property: "og:url", content: "/about" },
+      { title: "About Us | BasedClicksCo" },
+      { name: "description", content: "Learn about BasedClicksCo, your trusted SEO experts helping businesses grow online with technical SEO audits, content marketing and SEO, and local SEO." },
+      { property: "og:title", content: "About Us | BasedClicksCo" },
+      { property: "og:description", content: "Search engine optimization experts delivering SEO services for small businesses and enterprise SEO solutions." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/about" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/about" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "About", item: "https://elevare-seo.lovable.app/about" },
+          ],
+        }),
+      },
+    ],
   }),
   component: About,
 });
