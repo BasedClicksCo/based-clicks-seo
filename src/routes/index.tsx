@@ -73,7 +73,7 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden gradient-navy text-navy-foreground">
         <div className="absolute inset-0 opacity-30">
-          <img src={heroImg} alt="" width={1920} height={1080} className="h-full w-full object-cover" />
+          <img src={heroImg} alt="SEO services for small businesses and enterprise SEO solutions by BasedClicksCo" width={1920} height={1080} className="h-full w-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
         <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold/20 blur-3xl animate-float-slow" />
@@ -81,21 +81,21 @@ function Home() {
         <div className="container-px relative mx-auto grid max-w-7xl gap-12 py-24 md:py-32 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-gold">
-              <Sparkles className="h-3.5 w-3.5" /> Premium SEO Agency
+              <Sparkles className="h-3.5 w-3.5" /> Search Engine Optimization Experts
             </div>
             <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              Premium SEO Solutions <br className="hidden md:block" />
-              for <span className="gold-shimmer">Every Business</span>
+              Premium SEO Services <br className="hidden md:block" />
+              to Grow Your Business <span className="gold-shimmer">Online</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/75">
-              We help brands grow online — no matter the size or industry. Data-driven strategy, world-class execution, transparent reporting.
+              From SEO services for small businesses to enterprise SEO solutions, BasedClicksCo helps you increase website traffic with data-driven strategy and transparent reporting.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link to="/contact" className="group inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold transition-transform hover:-translate-y-0.5">
                 Get a Free SEO Audit <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link to="/services" className="inline-flex items-center gap-2 rounded-md border border-white/25 px-7 py-3.5 text-sm font-semibold text-white hover:border-gold hover:text-gold">
-                Explore Services
+                Explore SEO Services
               </Link>
             </div>
 
@@ -110,7 +110,7 @@ function Home() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-2xl bg-gold/15 blur-2xl" />
               <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-2 shadow-elegant backdrop-blur">
-                <img src={analyticsImg} alt="SEO analytics" width={1200} height={900} loading="eager" className="rounded-xl" />
+                <img src={analyticsImg} alt="SEO analytics dashboard showing keyword rankings and organic traffic growth" width={1200} height={900} loading="eager" className="rounded-xl" />
               </div>
             </div>
           </div>
