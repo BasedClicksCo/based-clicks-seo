@@ -5,13 +5,26 @@ import { Reveal, Eyebrow } from "@/components/site/Section";
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "Industries We Serve — Elevare SEO" },
-      { name: "description", content: "Custom SEO solutions for restaurants, eCommerce, tech startups, healthcare, law firms, real estate, and local businesses." },
-      { property: "og:title", content: "Industries We Serve — Elevare SEO" },
-      { property: "og:description", content: "Custom SEO solutions for every industry." },
-      { property: "og:url", content: "/industries" },
+      { title: "SEO for Any Business | BasedClicksCo" },
+      { name: "description", content: "BasedClicksCo delivers customized SEO solutions for all industries, boosting traffic and visibility for restaurants, eCommerce, tech, healthcare, and more." },
+      { property: "og:title", content: "SEO for Any Business | BasedClicksCo" },
+      { property: "og:description", content: "Customized SEO solutions for every industry — local SEO company expertise and enterprise SEO solutions." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/industries" },
     ],
-    links: [{ rel: "canonical", href: "/industries" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/industries" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Industries", item: "https://elevare-seo.lovable.app/industries" },
+          ],
+        }),
+      },
+    ],
   }),
   component: Industries,
 });
