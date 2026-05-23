@@ -115,7 +115,7 @@ function Services() {
                 </div>
                 <div className="lg:col-span-5">
                   <div className="relative overflow-hidden rounded-2xl border border-border shadow-elegant">
-                    <img src={analyticsImg} alt={s.title} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                    <img src={analyticsImg} alt={`${s.title} — BasedClicksCo SEO analytics`} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-tr from-navy/40 to-transparent" />
                   </div>
                 </div>
