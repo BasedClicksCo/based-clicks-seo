@@ -82,7 +82,7 @@ function CaseStudies() {
               <article className={`grid gap-10 rounded-2xl border border-border bg-card p-8 shadow-elegant md:p-12 lg:grid-cols-12 ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="lg:col-span-5">
                   <div className="relative overflow-hidden rounded-xl">
-                    <img src={caseImg} alt={c.title} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                    <img src={caseImg} alt={`${c.tag} SEO case study — ${c.title}`} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-tr from-navy/50 to-transparent" />
                     <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">{c.tag}</span>
                   </div>
