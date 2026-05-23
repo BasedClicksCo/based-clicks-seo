@@ -243,12 +243,12 @@ function Home() {
             <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             <div className="relative grid gap-8 lg:grid-cols-2 lg:items-center">
               <div>
-                <h2 className="font-serif text-3xl md:text-5xl">Ready to elevate your search presence?</h2>
-                <p className="mt-4 max-w-lg text-white/75">Request a free, no-obligation audit. We'll show you exactly where the opportunity is.</p>
+                <h2 className="font-serif text-3xl md:text-5xl">Ready to increase website traffic?</h2>
+                <p className="mt-4 max-w-lg text-white/75">Request a free technical SEO audit. Our search engine optimization experts show you exactly where the opportunity is.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 lg:justify-end">
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-                  Get my free audit <ArrowRight className="h-4 w-4" />
+                  Get my free SEO audit <ArrowRight className="h-4 w-4" />
                 </Link>
                 <a href="tel:+18189636728" className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold">
                   <CheckCircle2 className="h-4 w-4" /> Or call +1 (818) 963-6728
