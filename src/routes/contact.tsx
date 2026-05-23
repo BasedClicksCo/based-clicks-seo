@@ -134,7 +134,7 @@ function Contact() {
                     </div>
                     <div className="md:col-span-2">
                       <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">How can we help? <span className="text-destructive">*</span></label>
-                      <textarea name="message" rows={5} maxLength={1500} className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" placeholder="Briefly describe your goals, current SEO status, and what you'd like help with." />
+                      <textarea name="message" rows={5} maxLength={1500} className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" placeholder="Tell us your goals, current SEO status, and where you'd like help — local SEO, technical SEO audit, content marketing, or enterprise SEO." />
                       {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
                     </div>
                   </div>
