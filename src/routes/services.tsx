@@ -128,9 +128,9 @@ function Services() {
       <section className="bg-secondary/40 py-20">
         <div className="container-px mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-3xl text-navy md:text-4xl">Not sure where to start?</h2>
-          <p className="mt-3 text-muted-foreground">Get a free, personalized audit of your search performance — delivered in 5 business days.</p>
+          <p className="mt-3 text-muted-foreground">Get a free technical SEO audit from our search engine optimization experts — delivered in 5 business days. Explore <Link to="/industries" className="text-navy underline hover:text-gold">industries we serve</Link> or <Link to="/case-studies" className="text-navy underline hover:text-gold">recent case studies</Link>.</p>
           <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-            Request your audit <ArrowRight className="h-4 w-4" />
+            Request your free SEO audit <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
