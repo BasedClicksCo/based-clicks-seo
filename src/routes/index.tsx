@@ -8,24 +8,42 @@ import { Reveal, Eyebrow } from "@/components/site/Section";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elevare SEO — Premium SEO Solutions for Every Business" },
-      { name: "description", content: "Premium SEO strategy, technical optimization, content, and local SEO for brands of every size. Get a free SEO audit." },
-      { property: "og:title", content: "Elevare SEO — Premium SEO Solutions for Every Business" },
-      { property: "og:description", content: "Premium SEO strategy, technical optimization, content, and local SEO for brands of every size." },
-      { property: "og:url", content: "/" },
+      { title: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
+      { name: "description", content: "Elevate your online presence with expert SEO services from BasedClicksCo. We optimize for small, mid-size, and enterprise businesses." },
+      { property: "og:title", content: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
+      { property: "og:description", content: "Expert SEO services, technical SEO audits, and content marketing that increase website traffic for businesses of every size." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "BasedClicksCo",
+          image: "https://elevare-seo.lovable.app/og.jpg",
+          url: "https://elevare-seo.lovable.app/",
+          telephone: "+1-818-963-6728",
+          email: "ElevareSEO@gmail.com",
+          priceRange: "$$$",
+          address: { "@type": "PostalAddress", addressRegion: "California", addressCountry: "US" },
+          areaServed: "Worldwide",
+          description: "Local SEO company and search engine optimization experts providing SEO services for small businesses and enterprise SEO solutions.",
+        }),
+      },
+    ],
   }),
   component: Home,
 });
 
 const services = [
-  { icon: Target, title: "SEO Strategy & Consultation", text: "Custom roadmaps grounded in research, competition analysis, and your business goals." },
-  { icon: Search, title: "On-Page & Technical SEO", text: "Site architecture, Core Web Vitals, schema, and crawl optimization done right." },
-  { icon: FileText, title: "Content & Link Building", text: "Editorial content and trusted backlinks that move rankings and earn authority." },
-  { icon: MapPin, title: "Local & Multi-Location SEO", text: "Win local packs and scale Google Business profiles across every location." },
-  { icon: BarChart3, title: "Analytics & Reporting", text: "Transparent dashboards tying SEO activity to revenue, leads, and ROI." },
-  { icon: TrendingUp, title: "Conversion-Driven Growth", text: "We optimize the entire funnel — not just rankings — for measurable returns." },
+  { icon: Target, title: "SEO Strategy & Consultation", text: "Custom roadmaps grounded in keyword research, competitor analysis, and your business goals — built by search engine optimization experts." },
+  { icon: Search, title: "Technical SEO Audit & On-Page SEO", text: "Site architecture, Core Web Vitals, schema, and crawl optimization that move rankings fast." },
+  { icon: FileText, title: "Content Marketing & SEO", text: "Editorial content and authority backlinks that compound traffic and earn trust." },
+  { icon: MapPin, title: "Local SEO Company Services", text: "Win local packs and scale Google Business profiles for every location you serve." },
+  { icon: BarChart3, title: "Analytics & Reporting", text: "Transparent dashboards tying SEO services for small businesses to revenue, leads, and ROI." },
+  { icon: TrendingUp, title: "Enterprise SEO Solutions", text: "Scalable optimization for complex sites and multi-region brands ready to increase website traffic." },
 ];
 
 const industries = ["Restaurants", "eCommerce", "Tech Startups", "Healthcare", "Law Firms", "Real Estate", "Local Shops", "B2B SaaS"];
@@ -38,8 +56,8 @@ const stats = [
 ];
 
 const testimonials = [
-  { quote: "Elevare doubled our qualified organic leads in six months. They became a true extension of our team.", name: "Sarah Chen", role: "CMO, NorthPeak Health" },
-  { quote: "Their technical audit alone uncovered six-figure opportunities. The execution was flawless.", name: "Marcus Reid", role: "Founder, Atlas eCommerce" },
+  { quote: "BasedClicksCo doubled our qualified organic leads in six months. They became a true extension of our team.", name: "Sarah Chen", role: "CMO, NorthPeak Health" },
+  { quote: "Their technical SEO audit alone uncovered six-figure opportunities. The execution was flawless.", name: "Marcus Reid", role: "Founder, Atlas eCommerce" },
   { quote: "Premium service with measurable outcomes. We finally have an SEO partner we trust.", name: "Priya Anand", role: "VP Marketing, Lumen SaaS" },
 ];
 
