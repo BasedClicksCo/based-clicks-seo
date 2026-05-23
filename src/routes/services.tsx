@@ -85,9 +85,9 @@ function Services() {
     <div>
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <Eyebrow>Our services</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Everything you need to <span className="text-gold">win in search</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">A full-spectrum SEO offering — modular enough to fit any business, integrated enough to compound over time.</p>
+          <Eyebrow>Our SEO services</Eyebrow>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Our <span className="text-gold">SEO Services</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">A full-spectrum SEO offering — from technical SEO audits to content marketing and SEO — modular enough to fit any business and engineered to increase website traffic over time.</p>
         </div>
       </section>
 
