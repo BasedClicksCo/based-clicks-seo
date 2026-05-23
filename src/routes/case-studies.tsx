@@ -6,14 +6,27 @@ import caseImg from "@/assets/case-study.jpg";
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "Case Studies — Elevare SEO" },
-      { name: "description", content: "Real client results: organic traffic growth, ranking improvements, and ROI from Elevare SEO campaigns." },
-      { property: "og:title", content: "Case Studies — Elevare SEO" },
-      { property: "og:description", content: "Real client results from Elevare SEO campaigns." },
-      { property: "og:url", content: "/case-studies" },
+      { title: "SEO Case Studies | BasedClicksCo" },
+      { name: "description", content: "See how BasedClicksCo has increased traffic, rankings, and ROI for businesses across industries with technical SEO audits and content marketing." },
+      { property: "og:title", content: "SEO Case Studies | BasedClicksCo" },
+      { property: "og:description", content: "Proven SEO results — organic traffic growth, ranking improvements, and ROI from BasedClicksCo campaigns." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/case-studies" },
       { property: "og:image", content: "/src/assets/case-study.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/case-studies" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/case-studies" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://elevare-seo.lovable.app/case-studies" },
+          ],
+        }),
+      },
+    ],
   }),
   component: CaseStudies,
 });
@@ -57,8 +70,8 @@ function CaseStudies() {
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Case studies</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Outcomes that <span className="text-gold">move the business</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">A look at how our partnerships translate into traffic, leads, and revenue.</p>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Proven <span className="text-gold">SEO Results</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Real client wins from technical SEO audits, content marketing and SEO, and local SEO company campaigns — see how we increase website traffic and revenue.</p>
         </div>
       </section>
 
@@ -69,7 +82,7 @@ function CaseStudies() {
               <article className={`grid gap-10 rounded-2xl border border-border bg-card p-8 shadow-elegant md:p-12 lg:grid-cols-12 ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="lg:col-span-5">
                   <div className="relative overflow-hidden rounded-xl">
-                    <img src={caseImg} alt={c.title} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                    <img src={caseImg} alt={`${c.tag} SEO case study — ${c.title}`} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-tr from-navy/50 to-transparent" />
                     <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">{c.tag}</span>
                   </div>
@@ -98,8 +111,9 @@ function CaseStudies() {
       <section className="bg-secondary/40 py-20">
         <div className="container-px mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-3xl text-navy md:text-4xl">Your story could be next.</h2>
+          <p className="mt-3 text-muted-foreground">See our <Link to="/services" className="text-navy underline hover:text-gold">SEO services</Link> or learn more <Link to="/about" className="text-navy underline hover:text-gold">about BasedClicksCo</Link>.</p>
           <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-            Get a free audit <ArrowRight className="h-4 w-4" />
+            Get a free SEO audit <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

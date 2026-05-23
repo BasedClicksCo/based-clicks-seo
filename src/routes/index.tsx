@@ -8,24 +8,42 @@ import { Reveal, Eyebrow } from "@/components/site/Section";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elevare SEO — Premium SEO Solutions for Every Business" },
-      { name: "description", content: "Premium SEO strategy, technical optimization, content, and local SEO for brands of every size. Get a free SEO audit." },
-      { property: "og:title", content: "Elevare SEO — Premium SEO Solutions for Every Business" },
-      { property: "og:description", content: "Premium SEO strategy, technical optimization, content, and local SEO for brands of every size." },
-      { property: "og:url", content: "/" },
+      { title: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
+      { name: "description", content: "Elevate your online presence with expert SEO services from BasedClicksCo. We optimize for small, mid-size, and enterprise businesses." },
+      { property: "og:title", content: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
+      { property: "og:description", content: "Expert SEO services, technical SEO audits, and content marketing that increase website traffic for businesses of every size." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "BasedClicksCo",
+          image: "https://elevare-seo.lovable.app/og.jpg",
+          url: "https://elevare-seo.lovable.app/",
+          telephone: "+1-818-963-6728",
+          email: "ElevareSEO@gmail.com",
+          priceRange: "$$$",
+          address: { "@type": "PostalAddress", addressRegion: "California", addressCountry: "US" },
+          areaServed: "Worldwide",
+          description: "Local SEO company and search engine optimization experts providing SEO services for small businesses and enterprise SEO solutions.",
+        }),
+      },
+    ],
   }),
   component: Home,
 });
 
 const services = [
-  { icon: Target, title: "SEO Strategy & Consultation", text: "Custom roadmaps grounded in research, competition analysis, and your business goals." },
-  { icon: Search, title: "On-Page & Technical SEO", text: "Site architecture, Core Web Vitals, schema, and crawl optimization done right." },
-  { icon: FileText, title: "Content & Link Building", text: "Editorial content and trusted backlinks that move rankings and earn authority." },
-  { icon: MapPin, title: "Local & Multi-Location SEO", text: "Win local packs and scale Google Business profiles across every location." },
-  { icon: BarChart3, title: "Analytics & Reporting", text: "Transparent dashboards tying SEO activity to revenue, leads, and ROI." },
-  { icon: TrendingUp, title: "Conversion-Driven Growth", text: "We optimize the entire funnel — not just rankings — for measurable returns." },
+  { icon: Target, title: "SEO Strategy & Consultation", text: "Custom roadmaps grounded in keyword research, competitor analysis, and your business goals — built by search engine optimization experts." },
+  { icon: Search, title: "Technical SEO Audit & On-Page SEO", text: "Site architecture, Core Web Vitals, schema, and crawl optimization that move rankings fast." },
+  { icon: FileText, title: "Content Marketing & SEO", text: "Editorial content and authority backlinks that compound traffic and earn trust." },
+  { icon: MapPin, title: "Local SEO Company Services", text: "Win local packs and scale Google Business profiles for every location you serve." },
+  { icon: BarChart3, title: "Analytics & Reporting", text: "Transparent dashboards tying SEO services for small businesses to revenue, leads, and ROI." },
+  { icon: TrendingUp, title: "Enterprise SEO Solutions", text: "Scalable optimization for complex sites and multi-region brands ready to increase website traffic." },
 ];
 
 const industries = ["Restaurants", "eCommerce", "Tech Startups", "Healthcare", "Law Firms", "Real Estate", "Local Shops", "B2B SaaS"];
@@ -38,8 +56,8 @@ const stats = [
 ];
 
 const testimonials = [
-  { quote: "Elevare doubled our qualified organic leads in six months. They became a true extension of our team.", name: "Sarah Chen", role: "CMO, NorthPeak Health" },
-  { quote: "Their technical audit alone uncovered six-figure opportunities. The execution was flawless.", name: "Marcus Reid", role: "Founder, Atlas eCommerce" },
+  { quote: "BasedClicksCo doubled our qualified organic leads in six months. They became a true extension of our team.", name: "Sarah Chen", role: "CMO, NorthPeak Health" },
+  { quote: "Their technical SEO audit alone uncovered six-figure opportunities. The execution was flawless.", name: "Marcus Reid", role: "Founder, Atlas eCommerce" },
   { quote: "Premium service with measurable outcomes. We finally have an SEO partner we trust.", name: "Priya Anand", role: "VP Marketing, Lumen SaaS" },
 ];
 
@@ -55,7 +73,7 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden gradient-navy text-navy-foreground">
         <div className="absolute inset-0 opacity-30">
-          <img src={heroImg} alt="" width={1920} height={1080} className="h-full w-full object-cover" />
+          <img src={heroImg} alt="SEO services for small businesses and enterprise SEO solutions by BasedClicksCo" width={1920} height={1080} className="h-full w-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
         <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold/20 blur-3xl animate-float-slow" />
@@ -63,21 +81,21 @@ function Home() {
         <div className="container-px relative mx-auto grid max-w-7xl gap-12 py-24 md:py-32 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-gold">
-              <Sparkles className="h-3.5 w-3.5" /> Premium SEO Agency
+              <Sparkles className="h-3.5 w-3.5" /> Search Engine Optimization Experts
             </div>
             <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              Premium SEO Solutions <br className="hidden md:block" />
-              for <span className="gold-shimmer">Every Business</span>
+              Premium SEO Services <br className="hidden md:block" />
+              to Grow Your Business <span className="gold-shimmer">Online</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/75">
-              We help brands grow online — no matter the size or industry. Data-driven strategy, world-class execution, transparent reporting.
+              From SEO services for small businesses to enterprise SEO solutions, BasedClicksCo helps you increase website traffic with data-driven strategy and transparent reporting.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link to="/contact" className="group inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold transition-transform hover:-translate-y-0.5">
                 Get a Free SEO Audit <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link to="/services" className="inline-flex items-center gap-2 rounded-md border border-white/25 px-7 py-3.5 text-sm font-semibold text-white hover:border-gold hover:text-gold">
-                Explore Services
+                Explore SEO Services
               </Link>
             </div>
 
@@ -92,7 +110,7 @@ function Home() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-2xl bg-gold/15 blur-2xl" />
               <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-2 shadow-elegant backdrop-blur">
-                <img src={analyticsImg} alt="SEO analytics" width={1200} height={900} loading="eager" className="rounded-xl" />
+                <img src={analyticsImg} alt="SEO analytics dashboard showing keyword rankings and organic traffic growth" width={1200} height={900} loading="eager" className="rounded-xl" />
               </div>
             </div>
           </div>
@@ -116,8 +134,8 @@ function Home() {
         <div className="container-px mx-auto max-w-7xl">
           <Reveal className="mx-auto max-w-2xl text-center">
             <Eyebrow>What we do</Eyebrow>
-            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">A complete SEO partnership</h2>
-            <p className="mt-4 text-muted-foreground">From strategy to execution to measurement — every lever pulled with intention.</p>
+            <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Search Engine Optimization for All Business Sizes</h2>
+            <p className="mt-4 text-muted-foreground">From technical SEO audits to content marketing and SEO, every lever pulled to boost your online visibility.</p>
           </Reveal>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -148,9 +166,9 @@ function Home() {
           <Reveal className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <Eyebrow>Industries we serve</Eyebrow>
-              <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Any business. Any industry.</h2>
+              <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Boost Your Online Visibility in Any Industry</h2>
               <p className="mt-4 max-w-lg text-muted-foreground">
-                Whether you're a neighborhood restaurant or a global SaaS company, our methodology adapts to your audience, market, and goals.
+                Whether you're a neighborhood restaurant or a global SaaS company, our local SEO company expertise and enterprise SEO solutions adapt to your audience, market, and goals.
               </p>
               <Link to="/industries" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-gold">
                 See industries <ArrowRight className="h-4 w-4" />
@@ -225,12 +243,12 @@ function Home() {
             <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             <div className="relative grid gap-8 lg:grid-cols-2 lg:items-center">
               <div>
-                <h2 className="font-serif text-3xl md:text-5xl">Ready to elevate your search presence?</h2>
-                <p className="mt-4 max-w-lg text-white/75">Request a free, no-obligation audit. We'll show you exactly where the opportunity is.</p>
+                <h2 className="font-serif text-3xl md:text-5xl">Ready to increase website traffic?</h2>
+                <p className="mt-4 max-w-lg text-white/75">Request a free technical SEO audit. Our search engine optimization experts show you exactly where the opportunity is.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 lg:justify-end">
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-                  Get my free audit <ArrowRight className="h-4 w-4" />
+                  Get my free SEO audit <ArrowRight className="h-4 w-4" />
                 </Link>
                 <a href="tel:+18189636728" className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold">
                   <CheckCircle2 className="h-4 w-4" /> Or call +1 (818) 963-6728

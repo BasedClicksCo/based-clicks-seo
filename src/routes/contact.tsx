@@ -7,13 +7,26 @@ import { Reveal, Eyebrow } from "@/components/site/Section";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Elevare SEO — Get a Free SEO Audit" },
-      { name: "description", content: "Request a free SEO audit or get in touch with the Elevare team. Premium SEO consultation for businesses of every size." },
-      { property: "og:title", content: "Contact Elevare SEO — Get a Free SEO Audit" },
-      { property: "og:description", content: "Request a free SEO audit or get in touch with the Elevare team." },
-      { property: "og:url", content: "/contact" },
+      { title: "Contact BasedClicksCo | SEO Experts" },
+      { name: "description", content: "Request a free SEO audit from BasedClicksCo. Our team helps businesses increase online visibility and traffic with expert SEO services." },
+      { property: "og:title", content: "Contact BasedClicksCo | SEO Experts" },
+      { property: "og:description", content: "Get your free SEO consultation from search engine optimization experts." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://elevare-seo.lovable.app/contact" },
+          ],
+        }),
+      },
+    ],
   }),
   component: Contact,
 });
@@ -53,8 +66,8 @@ function Contact() {
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Contact</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Let's talk about your <span className="text-gold">growth goals</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">Tell us about your business and we'll respond within one business day — usually much faster.</p>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Get Your Free <span className="text-gold">SEO Consultation</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Talk to search engine optimization experts about your goals. We'll deliver a free technical SEO audit and a plan to increase website traffic — usually within one business day.</p>
         </div>
       </section>
 
@@ -83,14 +96,14 @@ function Contact() {
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><MapPin className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Where</div>
-                  <div className="font-serif text-lg text-navy">California · Remote worldwide</div>
+                  <div className="font-serif text-lg text-navy">California · Local SEO company serving clients worldwide</div>
                 </div>
               </li>
             </ul>
 
             <div className="mt-10 rounded-xl border border-gold/30 bg-gold/5 p-6">
-              <div className="font-serif text-lg text-navy">Free SEO Audit</div>
-              <p className="mt-1 text-sm text-muted-foreground">Mention "free audit" in your message and we'll include a personalized site review with our reply.</p>
+              <div className="font-serif text-lg text-navy">Free Technical SEO Audit</div>
+              <p className="mt-1 text-sm text-muted-foreground">Mention "free audit" in your message and we'll include a personalized technical SEO audit with our reply.</p>
             </div>
           </Reveal>
 
@@ -106,7 +119,7 @@ function Contact() {
                 </div>
               ) : (
                 <>
-                  <h2 className="font-serif text-2xl text-navy">Request a free audit</h2>
+                  <h2 className="font-serif text-2xl text-navy">Request your free SEO audit</h2>
                   <div className="mt-6 grid gap-5 md:grid-cols-2">
                     <Field label="Name" name="name" required error={errors.name} />
                     <Field label="Email" name="email" type="email" required error={errors.email} />
@@ -121,7 +134,7 @@ function Contact() {
                     </div>
                     <div className="md:col-span-2">
                       <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">How can we help? <span className="text-destructive">*</span></label>
-                      <textarea name="message" rows={5} maxLength={1500} className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" placeholder="Briefly describe your goals, current SEO status, and what you'd like help with." />
+                      <textarea name="message" rows={5} maxLength={1500} className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" placeholder="Tell us your goals, current SEO status, and where you'd like help — local SEO, technical SEO audit, content marketing, or enterprise SEO." />
                       {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
                     </div>
                   </div>
