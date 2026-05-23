@@ -70,8 +70,8 @@ function CaseStudies() {
       <section className="gradient-navy py-24 text-navy-foreground md:py-32">
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Case studies</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Outcomes that <span className="text-gold">move the business</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">A look at how our partnerships translate into traffic, leads, and revenue.</p>
+          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Proven <span className="text-gold">SEO Results</span></h1>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Real client wins from technical SEO audits, content marketing and SEO, and local SEO company campaigns — see how we increase website traffic and revenue.</p>
         </div>
       </section>
 
