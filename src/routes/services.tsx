@@ -6,13 +6,37 @@ import analyticsImg from "@/assets/analytics.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "SEO Services — Elevare SEO" },
-      { name: "description", content: "Comprehensive SEO services: strategy, technical, content, link building, local SEO, analytics, and conversion optimization." },
-      { property: "og:title", content: "SEO Services — Elevare SEO" },
-      { property: "og:description", content: "Comprehensive SEO services for brands of every size and industry." },
-      { property: "og:url", content: "/services" },
+      { title: "SEO Services | BasedClicksCo" },
+      { name: "description", content: "Discover professional SEO services at BasedClicksCo. From technical SEO audits to content marketing, we help your business rank higher." },
+      { property: "og:title", content: "SEO Services | BasedClicksCo" },
+      { property: "og:description", content: "Comprehensive SEO services — technical SEO audits, on-page SEO, content marketing, link building, and local SEO solutions." },
+      { property: "og:url", content: "https://elevare-seo.lovable.app/services" },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          serviceType: "Search Engine Optimization",
+          provider: { "@type": "Organization", name: "BasedClicksCo", url: "https://elevare-seo.lovable.app" },
+          areaServed: "Worldwide",
+          description: "SEO services for small businesses, enterprise SEO solutions, technical SEO audits, content marketing and SEO, and local SEO company services.",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: "SEO Services", item: "https://elevare-seo.lovable.app/services" },
+          ],
+        }),
+      },
+    ],
   }),
   component: Services,
 });
