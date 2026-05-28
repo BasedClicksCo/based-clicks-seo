@@ -71,6 +71,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
       { name: "twitter:description", content: "Expert SEO services for small, mid-size, and enterprise businesses across every industry." },
+      { name: "google-site-verification", content: "q1T8t6-05oewiZBEQdq4Q0K9JMVmxi30DcoysX0TtQI" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
     scripts: [
