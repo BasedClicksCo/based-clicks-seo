@@ -89,6 +89,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           address: { "@type": "PostalAddress", addressRegion: "California", addressCountry: "US" },
         }),
       },
+      {
+  src: "https://www.googletagmanager.com/gtag/js?id=G-3Z5ER71LQL",
+  async: true,
+},
+{
+  children: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3Z5ER71LQL');`,
+},
     ],
   }),
   shellComponent: RootShell,
