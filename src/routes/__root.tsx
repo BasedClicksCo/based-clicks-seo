@@ -90,14 +90,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         }),
       },
       {
-  src: "https://www.googletagmanager.com/gtag/js?id=G-3Z5ER71LQL",
+  src: "https://www.googletagmanager.com/gtag/js?id=G-45S082BZPR",
   async: true,
 },
 {
   children: `window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-3Z5ER71LQL');`,
+  gtag('config', 'G-45S082BZPR');`,
 },
     ],
   }),
