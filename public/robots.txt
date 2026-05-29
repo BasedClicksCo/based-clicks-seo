@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elevare-seo.lovable.app/sitemap.xml
+Sitemap: https://based-clicks-seo.arshamsobbi.workers.dev/sitemap.xml
