@@ -11,9 +11,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Request a free SEO audit from BasedClicksCo. Our team helps businesses increase online visibility and traffic with expert SEO services." },
       { property: "og:title", content: "Contact BasedClicksCo | SEO Experts" },
       { property: "og:description", content: "Get your free SEO consultation from search engine optimization experts." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/contact" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/contact" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/contact" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/contact")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "Contact", item: "https://elevare-seo.lovable.app/contact" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://based-clicks-seo.arshamsobbi.workers.dev/contact" },
           ],
         }),
       },
@@ -89,7 +89,7 @@ function Contact() {
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><Mail className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                  <a href="mailto:ElevareSEO@gmail.com" className="font-serif text-lg text-navy hover:text-gold">ElevareSEO@gmail.com</a>
+                  <a href="mailto:ElevareSEO@gmail.com" className="font-serif text-lg text-navy hover:text-gold">elevareseoforyou@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
