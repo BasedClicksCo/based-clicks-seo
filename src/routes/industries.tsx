@@ -6,7 +6,7 @@ export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
       { title: "SEO for Any Business | BasedClicksCo" },
-      { name: "description", content: "BasedClicksCo delivers customized SEO solutions for all industries, boosting traffic and visibility for restaurants, eCommerce, tech, healthcare, and more." },
+      { name: "description", content: "BasedClicksCo delivers customized SEO solutions for all industries, boosting traffic and visibility for law firms, eCommerce, tech, healthcare, and more." },
       { property: "og:title", content: "SEO for Any Business | BasedClicksCo" },
       { property: "og:description", content: "Customized SEO solutions for every industry — local SEO company expertise and enterprise SEO solutions." },
       { property: "og:url", content: "https://elevare-seo.lovable.app/industries" },
