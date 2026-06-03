@@ -10,10 +10,10 @@ export const Route = createFileRoute("/case-studies")({
       { name: "description", content: "See how BasedClicksCo has increased traffic, rankings, and ROI for businesses across industries with technical SEO audits and content marketing." },
       { property: "og:title", content: "SEO Case Studies | BasedClicksCo" },
       { property: "og:description", content: "Proven SEO results — organic traffic growth, ranking improvements, and ROI from BasedClicksCo campaigns." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/case-studies" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/case-studies" },
       { property: "og:image", content: "/src/assets/case-study.jpg" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/case-studies" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/case-studies" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/case-studies")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://elevare-seo.lovable.app/case-studies" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
+            { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://based-clicks-seo.arshamsobbi.workers.dev/case-studies" },
           ],
         }),
       },
