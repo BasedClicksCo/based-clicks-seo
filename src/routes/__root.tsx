@@ -60,7 +60,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
+      { title: "BasedClicksCo | SEO Services for Enterprise Businesses" },
       { name: "description", content: "Elevate your online presence with expert SEO services from BasedClicksCo. We optimize for small, mid-size, and enterprise businesses." },
       { name: "author", content: "BasedClicksCo" },
       { name: "keywords", content: "SEO services for small businesses, enterprise SEO solutions, local SEO company, technical SEO audit, content marketing and SEO, increase website traffic, search engine optimization experts" },
