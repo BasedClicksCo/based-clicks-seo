@@ -89,7 +89,7 @@ function Contact() {
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><Mail className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                  <a href="mailto:ElevareSEO@gmail.com" className="font-serif text-lg text-navy hover:text-gold">elevareseoforyou@gmail.com</a>
+                  <a href="mailto:Elevareseoforyou@gmail.com" className="font-serif text-lg text-navy hover:text-gold">Elevareseoforyou@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
