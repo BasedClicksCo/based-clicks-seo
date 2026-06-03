@@ -10,9 +10,9 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Learn about BasedClicksCo, your trusted SEO experts helping businesses grow online with technical SEO audits, content marketing and SEO, and local SEO." },
       { property: "og:title", content: "About Us | BasedClicksCo" },
       { property: "og:description", content: "Search engine optimization experts delivering SEO services for small businesses and enterprise SEO solutions." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/about" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/about" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/about" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/about" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -20,8 +20,8 @@ export const Route = createFileRoute("/about")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "About", item: "https://elevare-seo.lovable.app/about" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
+            { "@type": "ListItem", position: 2, name: "About", item: "https://based-clicks-seo.arshamsobbi.workers.dev/about" },
           ],
         }),
       },
