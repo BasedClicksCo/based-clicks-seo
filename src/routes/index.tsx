@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Search, TrendingUp, Target, BarChart3, MapPin, FileText, CheckCircle2, Star, Sparkles } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/hero.webp";
 import analyticsImg from "@/assets/analytics.jpg";
 import { Reveal, Eyebrow } from "@/components/site/Section";
 
