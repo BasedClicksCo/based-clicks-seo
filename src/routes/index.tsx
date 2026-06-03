@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Expert SEO services, technical SEO audits, and content marketing that increase website traffic for businesses of every size." },
       { property: "og:url", content: "https://elevare-seo.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -23,9 +23,9 @@ export const Route = createFileRoute("/")({
           "@type": "LocalBusiness",
           name: "BasedClicksCo",
           image: "https://elevare-seo.lovable.app/og.jpg",
-          url: "https://elevare-seo.lovable.app/",
+          url: "https://based-clicks-seo.arshamsobbi.workers.dev/",
           telephone: "+1-818-963-6728",
-          email: "ElevareSEO@gmail.com",
+          email: "elevareseoforyou@gmail.com",
           priceRange: "$$$",
           address: { "@type": "PostalAddress", addressRegion: "California", addressCountry: "US" },
           areaServed: "Worldwide",
