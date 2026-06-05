@@ -10,9 +10,9 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Discover professional SEO services at BasedClicksCo. From technical SEO audits to content marketing, we help your business rank higher." },
       { property: "og:title", content: "SEO Services | BasedClicksCo" },
       { property: "og:description", content: "Comprehensive SEO services — technical SEO audits, on-page SEO, content marketing, link building, and local SEO solutions." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/services" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/services" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/services" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/services" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "Service",
           serviceType: "Search Engine Optimization",
-          provider: { "@type": "Organization", name: "BasedClicksCo", url: "https://elevare-seo.lovable.app" },
+          provider: { "@type": "Organization", name: "BasedClicksCo", url: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
           areaServed: "Worldwide",
           description: "SEO services for small businesses, enterprise SEO solutions, technical SEO audits, content marketing and SEO, and local SEO company services.",
         }),
@@ -31,8 +31,8 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "SEO Services", item: "https://elevare-seo.lovable.app/services" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
+            { "@type": "ListItem", position: 2, name: "SEO Services", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
           ],
         }),
       },
