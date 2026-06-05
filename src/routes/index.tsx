@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Elevate your online presence with expert SEO services from BasedClicksCo. We optimize for small, mid-size, and enterprise businesses." },
       { property: "og:title", content: "BasedClicksCo | SEO Services for Small & Enterprise Businesses" },
       { property: "og:description", content: "Expert SEO services, technical SEO audits, and content marketing that increase website traffic for businesses of every size." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
     ],
     links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/" }],
     scripts: [
