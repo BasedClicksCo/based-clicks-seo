@@ -34,7 +34,9 @@ export function Footer() {
             <h4 className="font-serif text-base text-gold">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> <a href="tel:+18189636728" className="hover:text-gold">+1 (818) 963-6728</a></li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> <a href="mailto:ElevareSEO@gmail.com" className="hover:text-gold">ElevareSEO@gmail.com</a></li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> <a href="mailto:elevareseoforyou@gmail.com
+" className="hover:text-gold">elevareseoforyou@gmail.com
+</a></li>
               <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" /> California · Local SEO company serving clients worldwide</li>
             </ul>
           </div>
