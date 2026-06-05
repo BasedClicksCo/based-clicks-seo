@@ -9,9 +9,9 @@ export const Route = createFileRoute("/industries")({
       { name: "description", content: "BasedClicksCo delivers customized SEO solutions for all industries, boosting traffic and visibility for law firms, eCommerce, tech, healthcare, and more." },
       { property: "og:title", content: "SEO for Any Business | BasedClicksCo" },
       { property: "og:description", content: "Customized SEO solutions for every industry — local SEO company expertise and enterprise SEO solutions." },
-      { property: "og:url", content: "https://elevare-seo.lovable.app/industries" },
+      { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/industries" },
     ],
-    links: [{ rel: "canonical", href: "https://elevare-seo.lovable.app/industries" }],
+    links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/industries" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -19,8 +19,8 @@ export const Route = createFileRoute("/industries")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevare-seo.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: "Industries", item: "https://elevare-seo.lovable.app/industries" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
+            { "@type": "ListItem", position: 2, name: "Industries", item: "https://based-clicks-seo.arshamsobbi.workers.dev/" },
           ],
         }),
       },
