@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "BasedClicksCo",
-          image: "https://elevare-seo.lovable.app/og.jpg",
+          image: "https://based-clicks-seo.arshamsobbi.workers.dev/og-image.webp",
           url: "https://based-clicks-seo.arshamsobbi.workers.dev/",
           telephone: "+1-818-963-6728",
           email: "elevareseoforyou@gmail.com",
