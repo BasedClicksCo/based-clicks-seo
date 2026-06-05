@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search, Target, FileText, MapPin, BarChart3, TrendingUp, ArrowRight, Check } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/site/Section";
-import analyticsImg from "@/assets/analytics.jpg";
+import analyticsImg from "@/assets/analytics.webp";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
