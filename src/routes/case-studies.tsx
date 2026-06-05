@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { TrendingUp, ArrowRight } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/site/Section";
-import caseImg from "@/assets/case-study.jpg";
+import caseImg from "@/assets/case-study.webp";
 
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
@@ -11,7 +11,7 @@ export const Route = createFileRoute("/case-studies")({
       { property: "og:title", content: "SEO Case Studies | BasedClicksCo" },
       { property: "og:description", content: "Proven SEO results — organic traffic growth, ranking improvements, and ROI from BasedClicksCo campaigns." },
       { property: "og:url", content: "https://based-clicks-seo.arshamsobbi.workers.dev/case-studies" },
-      { property: "og:image", content: "/src/assets/case-study.jpg" },
+      { property: "og:image", content: "/src/assets/case-study.webp" },
     ],
     links: [{ rel: "canonical", href: "https://based-clicks-seo.arshamsobbi.workers.dev/case-studies" }],
     scripts: [
