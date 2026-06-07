@@ -88,7 +88,7 @@ function Home() {
               to Grow Your Business <span className="gold-shimmer">Online</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/75">
-              From SEO services for small businesses to enterprise SEO solutions, BasedClicksCo helps you increase website traffic with data-driven strategy and transparent reporting.
+              From SEO services for small businesses to enterprise SEO solutions, BasedClicksCo is an SEO agency based in Simi Valley helping you increase website traffic with data-driven strategy and transparent reporting.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link to="/contact" className="group inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold transition-transform hover:-translate-y-0.5">
