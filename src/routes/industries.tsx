@@ -47,7 +47,7 @@ function Industries() {
         <div className="container-px mx-auto max-w-7xl">
           <Eyebrow>Industries we serve</Eyebrow>
           <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">SEO Solutions for <span className="text-gold">Every Industry</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">Customized SEO services for small businesses, mid-size brands, and enterprise SEO solutions — shaped around your buyers, sales cycle, and competitive landscape.</p>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">Customized SEO services for law firms, med spas, dental offices and more across Simi Valley and Los Angeles— shaped around your buyers, sales cycle, and competitive landscape.</p>
         </div>
       </section>
 
