@@ -135,7 +135,7 @@ function Home() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <Eyebrow>What we do</Eyebrow>
             <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">Search Engine Optimization for All Business Sizes</h2>
-            <p className="mt-4 text-muted-foreground">From technical SEO audits to content marketing and SEO, every lever pulled to boost your online visibility.</p>
+            <p className="mt-4 text-muted-foreground">From technical SEO audits to content marketing and SEO, every lever pulled to boost your online visibility for businesses across Simi Valley and Los Angeles.</p>
           </Reveal>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
