@@ -61,7 +61,7 @@ function About() {
             <h2 className="mt-4 font-serif text-4xl text-navy md:text-5xl">SEO experts helping businesses of every size grow online</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>BasedClicksCo was founded by senior practitioners tired of watching great brands receive cookie-cutter SEO. We deliver the same craft as great engineering — applied to search.</p>
-              <p>Today we work with single-location shops, fast-growing startups, and global enterprises. From <Link to="/services" className="text-navy underline hover:text-gold">technical SEO audits</Link> to content marketing and SEO and local SEO company services, every engagement is custom — and the standard is always premium.</p>
+              <p>Today we work with single-location shops, fast-growing startups, and enterprises. From <Link to="/services" className="text-navy underline hover:text-gold">technical SEO audits</Link> to content marketing and SEO and local SEO company services, every engagement is custom — and the standard is always premium.</p>
               <p>Every client gets a senior team, transparent reporting, and a partner committed to helping you increase website traffic and revenue. See our <Link to="/case-studies" className="text-navy underline hover:text-gold">case studies</Link> for proof.</p>
             </div>
           </Reveal>
