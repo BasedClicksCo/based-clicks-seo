@@ -96,7 +96,7 @@ function Contact() {
                 <span className="grid h-11 w-11 place-items-center rounded-lg gradient-navy text-gold"><MapPin className="h-5 w-5" /></span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Where</div>
-                  <div className="font-serif text-lg text-navy">California · Local SEO company serving clients worldwide</div>
+                  <div className="font-serif text-lg text-navy">Simi Valley, California · Local SEO company serving clients across California</div>
                 </div>
               </li>
             </ul>
