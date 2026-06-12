@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { TrendingUp, ArrowRight } from "lucide-react";
 import { Reveal, Eyebrow } from "@/components/site/Section";
+import { CrawlerField } from "@/components/site/CrawlerField";
+import { CountUp } from "@/components/site/CountUp";
 import caseImg from "@/assets/case-study.webp";
 
 export const Route = createFileRoute("/case-studies")({
@@ -67,11 +69,12 @@ const cases = [
 function CaseStudies() {
   return (
     <div>
-      <section className="gradient-navy py-24 text-navy-foreground md:py-32">
-        <div className="container-px mx-auto max-w-7xl">
-          <Eyebrow>Case studies</Eyebrow>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Proven <span className="text-gold">SEO Results</span></h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">Real client wins from technical SEO audits, content marketing and SEO, and local SEO company campaigns — see how we increase website traffic and revenue.</p>
+      <section className="gradient-ink relative overflow-hidden py-24 md:py-32">
+        <CrawlerField />
+        <div className="container-px pointer-events-none relative mx-auto max-w-7xl">
+          <div className="rise-in"><Eyebrow>Case studies</Eyebrow></div>
+          <h1 className="rise-in rise-delay-1 mt-5 max-w-3xl font-serif text-5xl md:text-6xl">Proven <span className="gold-shimmer">SEO Results</span></h1>
+          <p className="rise-in rise-delay-2 mt-7 max-w-2xl text-lg leading-relaxed text-foreground/65">Real client wins from technical SEO audits, content marketing and SEO, and local SEO company campaigns — see how we increase website traffic and revenue.</p>
         </div>
       </section>
 
@@ -79,25 +82,24 @@ function CaseStudies() {
         <div className="container-px mx-auto max-w-7xl space-y-12">
           {cases.map((c, i) => (
             <Reveal key={c.title}>
-              <article className={`grid gap-10 rounded-2xl border border-border bg-card p-8 shadow-elegant md:p-12 lg:grid-cols-12 ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+              <article className={`panel panel-hover grid gap-10 rounded-2xl p-8 md:p-12 lg:grid-cols-12 ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="lg:col-span-5">
-                  <div className="relative overflow-hidden rounded-xl">
-                    <img src={caseImg} alt={`${c.tag} SEO case study — ${c.title}`} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-tr from-navy/50 to-transparent" />
-                    <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">{c.tag}</span>
+                  <div className="frame-glow relative overflow-hidden">
+                    <img src={caseImg} alt={`${c.tag} SEO case study — ${c.title}`} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full rounded-2xl object-cover" />
+                    <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-navy">{c.tag}</span>
                   </div>
                 </div>
                 <div className="lg:col-span-7">
-                  <h2 className="font-serif text-2xl text-navy md:text-3xl">{c.title}</h2>
-                  <p className="mt-4 text-muted-foreground">{c.summary}</p>
-                  <div className="mt-8 grid grid-cols-3 gap-4 border-t border-border pt-6">
+                  <h2 className="font-serif text-2xl md:text-3xl">{c.title}</h2>
+                  <p className="mt-4 leading-relaxed text-muted-foreground">{c.summary}</p>
+                  <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                     {c.metrics.map((m) => (
                       <div key={m.label}>
-                        <div className="flex items-center gap-1 font-serif text-2xl text-navy md:text-3xl">
-                          <TrendingUp className="h-4 w-4 text-gold" />
-                          {m.value}
+                        <div className="flex items-center gap-1.5 font-serif text-2xl text-gold md:text-3xl">
+                          <TrendingUp className="h-4 w-4" />
+                          <CountUp value={m.value} />
                         </div>
-                        <div className="mt-1 text-xs text-muted-foreground">{m.label}</div>
+                        <div className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-foreground/45">{m.label}</div>
                       </div>
                     ))}
                   </div>
@@ -108,13 +110,15 @@ function CaseStudies() {
         </div>
       </section>
 
-      <section className="bg-secondary/40 py-20">
+      <section className="border-t border-white/8 bg-white/[0.02] py-20">
         <div className="container-px mx-auto max-w-4xl text-center">
-          <h2 className="font-serif text-3xl text-navy md:text-4xl">Your story could be next.</h2>
-          <p className="mt-3 text-muted-foreground">See our <Link to="/services" className="text-navy underline hover:text-gold">SEO services</Link> or learn more <Link to="/about" className="text-navy underline hover:text-gold">about BasedClicksCo</Link>.</p>
-          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md gradient-gold px-7 py-3.5 text-sm font-semibold text-navy shadow-gold">
-            Get a free SEO audit <ArrowRight className="h-4 w-4" />
-          </Link>
+          <Reveal>
+            <h2 className="font-serif text-3xl md:text-4xl">Your story could be next.</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">See our <Link to="/services" className="text-foreground underline decoration-gold/50 underline-offset-4 transition-colors hover:text-gold">SEO services</Link> or learn more <Link to="/about" className="text-foreground underline decoration-gold/50 underline-offset-4 transition-colors hover:text-gold">about BasedClicksCo</Link>.</p>
+            <Link to="/contact" className="btn-gold mt-9 inline-flex items-center gap-2 rounded-md px-7 py-3.5 text-sm font-semibold">
+              Get a free SEO audit <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
         </div>
       </section>
     </div>

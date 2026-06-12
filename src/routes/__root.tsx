@@ -16,13 +16,13 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-serif text-7xl font-bold text-navy">404</h1>
+        <h1 className="font-serif text-7xl text-gold">404</h1>
         <h2 className="mt-4 font-serif text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
-          <Link to="/" className="inline-flex items-center justify-center rounded-md gradient-gold px-5 py-2.5 text-sm font-semibold text-navy">
+          <Link to="/" className="btn-gold inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold">
             Go home
           </Link>
         </div>
@@ -42,11 +42,11 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
             onClick={() => { router.invalidate(); reset(); }}
-            className="inline-flex items-center justify-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-navy-foreground hover:opacity-90"
+            className="btn-gold inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold"
           >
             Try again
           </button>
-          <a href="/" className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground hover:bg-accent/20">
+          <a href="/" className="btn-ghost inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium">
             Go home
           </a>
         </div>

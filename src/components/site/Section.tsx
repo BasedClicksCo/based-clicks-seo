@@ -13,8 +13,8 @@ export function Reveal({ children, className, ...rest }: PropsWithChildren<HTMLA
 
 export function Eyebrow({ children }: PropsWithChildren) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-gold">
-      <span className="h-px w-8 bg-gold" />
+    <span className="inline-flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.28em] text-gold">
+      <span className="h-px w-8 bg-gold/70" />
       {children}
     </span>
   );
